@@ -20,7 +20,7 @@ jobs:
 
       - name: sed api endpoint
         run: |
-          sed -e "s/<ENDPOINT HERE>/${{ secrets.AWS_API_ENDPOINT }}" js/main.js
+          sed -e "s/<ENDPOINT HERE>/${{ secrets.AWS_API_ENDPOINT }}/g" js/main.js > js/main.js
 
       - name: deploy
         run: |
