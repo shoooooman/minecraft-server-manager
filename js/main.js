@@ -6,7 +6,7 @@ window.onload = async function() {
   document.getElementById('stop-button').onclick = sendStopCmd;
 }
 
-const url = '<ENDPOINT HERE>';
+const url = 'ENDPOINT HERE';
 
 async function getServerStatus() {
   const endpoint = url + '/server/status';
