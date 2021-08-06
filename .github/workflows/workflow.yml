@@ -20,4 +20,4 @@ jobs:
 
       - name: deploy
         run: |
-          aws s3 sync . ${{ secrets.AWS_S3_BUCKET_NAME }} --delete --exclude "README.md" --exclude ".git/" --exclude ".github/"
+          aws s3 sync . ${{ secrets.AWS_S3_BUCKET_NAME }} --delete --exclude "README.md" --exclude ".git/*" --exclude ".github/*"
